@@ -1,0 +1,61 @@
+{
+    "media": [
+        {
+            "defName": "IMAGE_BACKGROUND",
+            "type": "png",
+            "file": "images/bg.png"
+        },
+        {
+            "defName": "IMAGE_NINE",
+            "type": "png",
+            "file": "images/9.png"
+        },
+        {
+            "defName": "IMAGE_EIGHT",
+            "type": "png",
+            "file": "images/8.png"
+        },
+        {
+            "defName": "IMAGE_SEVEN",
+            "type": "png",
+            "file": "images/7.png"
+        },
+        {
+            "defName": "IMAGE_SIX",
+            "type": "png",
+            "file": "images/6.png"
+        },
+        {
+            "defName": "IMAGE_FIVE",
+            "type": "png",
+            "file": "images/5.png"
+        },
+        {
+            "defName": "IMAGE_FOUR",
+            "type": "png",
+            "file": "images/4.png"
+        },
+        {
+            "defName": "IMAGE_THREE",
+            "type": "png",
+            "file": "images/3.png"
+        },
+        {
+            "defName": "IMAGE_TWO",
+            "type": "png",
+            "file": "images/2.png"
+        },
+        {
+            "defName": "IMAGE_ONE",
+            "type": "png",
+            "file": "images/1.png"
+        },
+        {
+            "defName": "IMAGE_ZERO",
+            "type": "png",
+            "file": "images/0.png"
+        }
+    ],
+    "friendlyVersion": "VERSION",
+    "versionDefName": "APP_RESOURCES"
+}
