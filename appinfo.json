@@ -1,17 +1,78 @@
 {
-  "uuid": "1680e350-f9c5-4f70-be7a-9b5bb821a3fc",
-  "shortName": "cb",
-  "longName": "cb",
-  "companyName": "MakeAwesomeHappen",
+  "uuid": "63c7d688-1afb-41c3-90f1-8a7cff879183",
+  "shortName": "Memoface",
+  "longName": "Memoface",
+  "companyName": "izqui.me",
   "versionCode": 1,
   "versionLabel": "1.0.0",
   "watchapp": {
-    "watchface": false
+    "watchface": true
   },
   "appKeys": {
-    "dummy": 0
+    "resource": 0,
+    "text":1,
+    "start":2,
+    "end":3
   },
   "resources": {
-    "media": []
-  }
+    "media": [
+      {
+        "menuIcon": true,
+        "type": "png",
+        "name": "IMAGE_MENU_ICON",
+        "file": "images/menu_icon_big_watch.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_0",
+        "file": "images/num_0.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_1",
+        "file": "images/num_1.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_2",
+        "file": "images/num_2.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_3",
+        "file": "images/num_3.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_4",
+        "file": "images/num_4.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_5",
+        "file": "images/num_5.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_6",
+        "file": "images/num_6.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_7",
+        "file": "images/num_7.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_8",
+        "file": "images/num_8.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_9",
+        "file": "images/num_9.png"
+      }
+    ]
+  },
+  "capabilities":["configurable"]
 }
