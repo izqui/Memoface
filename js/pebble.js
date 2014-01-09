@@ -58,11 +58,15 @@ var sendMemo = function (){
 
 		send(queue)
 	}
+	else {
 
+		Pebble.showSimpleNotificationOnPebble("Welcome", "Go to the Pebble app and then to Memoface settings to set the text")
+	}
 }
 Pebble.addEventListener("ready", function (e){
 
 	sendMemo();
+
 })
 
 Pebble.addEventListener("showConfiguration", function (e){
