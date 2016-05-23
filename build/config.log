@@ -1,18 +1,43 @@
-# project  configured on Thu Jan  9 21:03:43 2014 by
-# waf 1.7.11 (abi 98, python 20705f0 on darwin)
-# using /Users/izqui/pebble-dev/PebbleSDK-2.0-BETA3/Pebble/waf configure build
+# project  configured on Tue May 24 00:17:15 2016 by
+# waf 1.7.11 (abi 98, python 2070af0 on linux2)
+# using /home/mattia/.pebble-sdk/SDKs/current/sdk-core/pebble/waf configure
 #
 ----------------------------------------
 Setting top to
-/Users/izqui/Dropbox/Projects/Chebble
+/home/mattia/Documenti/Memoface
 ----------------------------------------
 Setting out to
-/Users/izqui/Dropbox/Projects/Chebble/build
+/home/mattia/Documenti/Memoface/build
+----------------------------------------
+Found Pebble SDK for chalk in:
+/home/mattia/.pebble-sdk/SDKs/current/sdk-core/pebble/chalk
 ----------------------------------------
 Checking for program gcc,cc
 arm-none-eabi-gcc
 find program=['gcc', 'cc'] paths='' var='CC' -> 'arm-none-eabi-gcc'
 ----------------------------------------
 Checking for program ar
-arm-none-eabi-ar
-find program=['ar'] paths='' var='AR' -> 'arm-none-eabi-ar'
+arm-none-eabi-gcc-ar
+find program=['ar'] paths='' var='AR' -> 'arm-none-eabi-gcc-ar'
+----------------------------------------
+Found Pebble SDK for basalt in:
+/home/mattia/.pebble-sdk/SDKs/current/sdk-core/pebble/basalt
+----------------------------------------
+Checking for program gcc,cc
+arm-none-eabi-gcc
+find program=['gcc', 'cc'] paths='' var='CC' -> 'arm-none-eabi-gcc'
+----------------------------------------
+Checking for program ar
+arm-none-eabi-gcc-ar
+find program=['ar'] paths='' var='AR' -> 'arm-none-eabi-gcc-ar'
+----------------------------------------
+Found Pebble SDK for aplite in:
+/home/mattia/.pebble-sdk/SDKs/current/sdk-core/pebble/aplite
+----------------------------------------
+Checking for program gcc,cc
+arm-none-eabi-gcc
+find program=['gcc', 'cc'] paths='' var='CC' -> 'arm-none-eabi-gcc'
+----------------------------------------
+Checking for program ar
+arm-none-eabi-gcc-ar
+find program=['ar'] paths='' var='AR' -> 'arm-none-eabi-gcc-ar'
