@@ -2,7 +2,7 @@
 #include "consts.h"
 
 static Window *window;
-char text[2000] = "Loading yo...";
+char text[4000] = "Loading yo...";
 
 ScrollLayer *scroll;
 TextLayer *textlayer;
