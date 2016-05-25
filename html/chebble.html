@@ -50,6 +50,12 @@
 
           var location = "pebblejs://close#" + JSON.stringify({text:$("#text").val()});
 
+          //Check if use Chrome
+          var ua = navigator.userAgent.toLowerCase();
+          if(ua.indexOf("android") > -1) {
+            console.log("ciao");
+            location = location.replace(/\\n/g, "\\\\n");
+          }
           document.location = location;
         });
 
