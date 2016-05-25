@@ -3,7 +3,7 @@
   "shortName": "Memoface",
   "longName": "Memoface",
   "companyName": "izqui.me",
-  "versionLabel": "1.1",
+  "versionLabel": "2.0",
   "watchapp": {
     "watchface": true
   },
@@ -78,8 +78,7 @@
   ],
   "targetPlatforms": [
     "aplite",
-    "basalt",
-    "chalk"
+    "basalt"
   ],
   "sdkVersion": "3"
 }
