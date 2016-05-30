@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Configurable</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/slate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  </head>
+  <body>
+    <div class='item-container'>
+      <h1 class='title'>
+        Add note
+      </h1>
+    </div>
+    <div class='item-container'>
+      <div class='item-container-content'>
+        <div class='item'>
+          Write the note you want to push on pebble.
+        </div>
+      </div>
+    </div>ì
+    <div class="item-container">
+      <div class="item-container-header">Input Field</div>
+      <div class="item-container-content">
+        <label class="item">
+          <div class="item-input-wrapper">
+            <textarea type="text" class="item-input" name="input-1" placeholder="Write your note" id="text"></textarea>
+          </div>
+        </label>
+      </div>
+    </div>
+    <div class='item-container'>
+      <div class='button-container'>
+        <input id='b-submit' type='button' class='item-button' value='SUBMIT'>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function() {
+        $("#b-submit").click(function() {
+          console.log("Submit");
+
+          var location = "pebblejs://close#" + JSON.stringify({text:$("#text").val()});
+
+          //Check if use Chrome
+          var ua = navigator.userAgent.toLowerCase();
+          if(ua.indexOf("android") > -1) {
+            location = location.replace(/\\n/g, "\\\\n");
+          }
+          
+          document.location = location;
+        });
+
+        var text = window.location.search;
+        var json = JSON.parse(decodeURIComponent(text.replace('?', '')));
+        if (json && json.text){
+
+          $("#text").val(json.text)
+        }
+      });
+    </script>
+  </body>
+  <script src="js/slate.min.js"></script>
+</html>

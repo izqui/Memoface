@@ -3,16 +3,15 @@
   "shortName": "Memoface",
   "longName": "Memoface",
   "companyName": "izqui.me",
-  "versionCode": 1,
-  "versionLabel": "1.0.0",
+  "versionLabel": "2.0",
   "watchapp": {
     "watchface": true
   },
   "appKeys": {
     "resource": 0,
-    "text":1,
-    "start":2,
-    "end":3
+    "text": 1,
+    "start": 2,
+    "end": 3
   },
   "resources": {
     "media": [
@@ -74,5 +73,12 @@
       }
     ]
   },
-  "capabilities":["configurable"]
+  "capabilities": [
+    "configurable"
+  ],
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ],
+  "sdkVersion": "3"
 }

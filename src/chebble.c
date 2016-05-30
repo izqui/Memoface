@@ -2,7 +2,7 @@
 #include "consts.h"
 
 static Window *window;
-char text[2000] = "Loading yo...";
+char text[4000] = "Loading yo...";
 
 ScrollLayer *scroll;
 TextLayer *textlayer;
@@ -22,7 +22,7 @@ void accel_data_handler(AccelData *data, uint32_t num_samples) {
   else if (y > 500) point.y -= 5;*/
 
   scroll_layer_set_content_offset(scroll, point, true);
-  //APP_LOG(APP_LOG_LEVEL_DEBUG, "value: %d point: %d", y, point.y);
+  APP_LOG(APP_LOG_LEVEL_DEBUG, "value: %d point: %d", y, point.y);
 }
 void memo_load(Window *win){
 
@@ -67,7 +67,6 @@ void memo_view(){
       .load = memo_load,
       .unload = memo_unload,
     });
-    window_set_fullscreen(win, true);
     window_stack_push(win, true);
   }
 }
@@ -125,7 +124,7 @@ static void load_digit_image_into_slot(int slot_number, int digit_value) {
   images[slot_number] = gbitmap_create_with_resource(IMAGE_RESOURCE_IDS[digit_value]);
   GRect frame = (GRect) {
     .origin = { (slot_number % 2) * 72, (slot_number / 2) * 84 },
-    .size = images[slot_number]->bounds.size
+    .size = gbitmap_get_bounds(images[slot_number]).size
   };
   BitmapLayer *bitmap_layer = bitmap_layer_create(frame);
   image_layers[slot_number] = bitmap_layer;
@@ -236,7 +235,6 @@ static void accel_tap(AccelAxisType axis, int32_t direction){
 }
 static void init() {
   window = window_create();
-  window_set_fullscreen(window, true);
   window_stack_push(window, true);
   window_set_background_color(window, GColorBlack);
 
